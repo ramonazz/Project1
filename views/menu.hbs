@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/background.css">
+    <link rel="stylesheet" href="/menu.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Interactive Sidebar Menu</title>
+</head>
+<body class="background">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" id="myAccountLink">My Account</a></li>
+            <li><a href="#" data-target="help">Help</a></li>
+            <li><a href="#" data-target="management">Account Management</a></li>
+            <li><a href="#" data-target="security">Security & Privacy</a></li>
+            <li><a href="#" data-target="notifications">Notifications</a></li>
+            <li><a href="#" data-target="about">About Us</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div id="account" class="content-section">Content for My Account</div>
+        <div id="help" class="content-section hidden">Content for Help</div>
+        <div id="management" class="content-section hidden">
+            <div>
+                <h2>Account Management</h2>
+                <form id="accountManagementForm" action="/auth/update-account" method="POST">
+                    <label for="address">Address: {{ userDetails.address }}</label>
+                    <input type="text" id="address" name="address" value="{{ userDetails.address }}">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+        <div id="security" class="content-section hidden">Content for Security & Privacy</div>
+        <div id="notifications" class="content-section hidden">Content for Notifications</div>
+        <div id="about" class="content-section hidden">Content for About Us</div>
+    </div>
+    <script src="/script.js"></script>
+    <script>
+        document.getElementById('myAccountLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '/auth/index';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.navbar {
+   
+    background-color: #0c0929; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 999;
+}
+
+.menu-btn {
+    cursor: pointer;
+    padding: 10px 15px; 
+    border-radius: 20px; 
+    background-color: #aae0d6; 
+    transition: background-color 0.3s; 
+    text-decoration: none;
+}
+.menu-btn:active {
+    color: #000000; 
+}
+
+.menu-btn:hover {
+    background-color: #d3f7f0; 
+}
+
+.menu-icon {
+    width: 30px;
+}
+
+.nav-btn ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-btn li {
+    margin-right: 20px;
+}
+
+.nav-btn a {
+    color: #0c0929; 
+    ; 
+    text-decoration: none;
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    background-color: #aae0d6; 
+     /* Blue */
+    transition: background-color 0.3s; 
+}
+
+.nav-btn a:hover {
+    background-color: #d3f7f0; 
+}

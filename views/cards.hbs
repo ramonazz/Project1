@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/background.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/cards.css">
+</head>
+<body class="background">
+    <header>
+        <div class="navbar">
+            <a href="/auth/menu" class="menu-btn">
+                &#9776;
+            </a>            
+            <div class="nav-btn">
+                <ul>
+                    <li><a href="/auth/index">Accounts</a></li>
+                    <li><a href="/auth/cards">Cards</a></li>
+                    <li><a href="/transfers">Payments & Transfers</a></li>
+                    <li><a href="/logout">Log Out </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="cards glass">
+        <h2>Cards</h2>
+        <div class="no-card">
+            <input type="checkbox" id="cardx">
+            <label for="cardx" >Card 1</label>
+            <section class="collapsible-part"> 
+                <div class="container">
+                    <div class="card front-face">
+                        <header>
+                            <span class="logo">
+                                <img src="/images/logo.png" alt=""/>
+                                <h5>Master Card</h5>
+                            </span>
+                            <img src="/images/chip.png" alt="" class="chip"/>
+                        </header>  
+                        
+                        <div class="card-details">
+                            <div class="name-number">
+                                <h6>Card Number</h6>
+                                <h5 class="number">{{cardNumber}}</h5>
+                                <h5 class="name">{{cardHolder}}</h5>
+                            </div>
+                            <div class="valid-date">
+                                <h6>Valid Thru</h6>
+                                <h5>05np/28</h5>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card back-face">
+                    <h6>
+                        For customer service call +977 4343 4343 or email at
+                        mastercard@gmail.com
+                    </h6>
+                    <span class="magnetic-strip"></span>
+                    <div class="signature"><i>{{signature}}</i></div>
+                    <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, 
+                        reiciendis. A cum dolorem dolorum sequi laudantium ipsam esse error 
+                        porro placeat! Nam animi, hic qui temporibus vel velit possimus alias?
+                    </h5>
+                </div>
+                </div>
+            </section>
+        </div>
+        <button class="new" id="getNewCard">&#43; Get a new card</button>
+    </div>
+    
+
+</body>
+</html>

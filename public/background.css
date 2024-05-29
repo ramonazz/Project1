@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #1c1a88,#15422c, #1c1a88);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+}
+.container input[type="number"],
+.container input[type="date"],
+.container input[type="text"],
+.login-container input[type="date"],
+.login-container input[type="tel"], 
+.login-container input[type="email"], 
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login-container input[type="submit"] {
+    cursor: pointer;
+    background-color: #007bff;
+    color:white;
+    border-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.centered {
+    text-align: center;
+    color: black;
+}
+
+.centered a:visited {
+    color: black;
+}
+
+.centered a:hover {
+    text-decoration: underline;
+}
+
+.alert-danger {
+    font-size: 14px; /* Adjust the font size as needed */
+    width: 100%; /* Adjust the width as needed */
+    padding: 8px; /* Add padding to create space around the text */
+    border: 1px solid #d9534f; /* Add a border */
+    border-radius: 4px; /* Add rounded corners */
+    background-color: #f2dede; /* Change the background color */
+    color: #a94442; /* Change the text color */
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 100px; /* Set a minimum height */
+    font-family: 'Poppins', sans-serif; /* Use a custom font */
+}
